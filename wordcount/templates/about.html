@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500&display=swap');
+
+        html {
+            height: 100%;
+        }
+        
+        body {
+            font-family: 'Source Sans Pro';
+            font-weight: 300;
+            text-align: center;
+            position:absolute;
+            top:0; left:0; bottom:0; right:0;
+            height:10%;
+            margin:10% auto;
+        }
+
+        h1 {
+            color: #19ce60;
+            font-weight: 800;
+            font-size: 3rem;
+        }
+
+        p {
+            line-height: 250%;
+            margin-bottom: 100px;
+            font-family: 'Noto Serif KR', serif;
+        }
+
+        a {
+            text-decoration: none;
+            color: #19ce60; 
+            font-size: 2rem;
+        }
+
+    </style>
+</head>
+<body>
+    <h1> About</h1>
+    <p>안녕하세요, 이곳은 네이버 페이지를 참고해 제작한 글자를 세 주는 워드카운트 페이지입니다.
+    <br>텍스트 박스에 글을 적고 Count! 버튼을 누르면 입력하신 글에서 사용된 글자들의 수가 출력됩니다.
+    <br>글에서 자주 사용된 말을 찾아보세요!</p>
+    <a href="{%url 'home'%}">Home으로 돌아가기</a> 
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            height: 100%;
+        }
+        
+        body {
+            height: 100%;
+            min-height: 35rem;
+            position: relative;
+            font-family: 'Source Sans Pro';
+            font-weight: 300;
+            text-align: center;
+        }
+
+        h1 {
+            color: #19ce60;
+            font-weight: 800;
+            font-size: 4rem;
+        }
+
+        textarea {
+            border: 2px solid #19ce60;
+            padding: 15px;
+        }
+
+        #about {
+            text-decoration: none;
+            color:grey;
+            font-size: 40px;
+        }
+
+        .div_about {
+            margin-left: auto;
+            margin-right: auto;
+            width: 600px;
+            margin-bottom: 25px;
+            text-align: right;
+        }
+
+        #submit {
+            background-color: #19ce60;
+            border: solid 1px #19ce60;
+            border-radius: 15px;
+            height: 50px;
+            width: 70px;
+            margin-top: 20px;
+            color: white;
+            font-weight: 800;
+            margin-bottom: 50px;
+        }   
+    </style>
+</head>
+<body>
+
+    <h1>Count your Words!</h1>
+    <div class="div_about">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSrVFAA_PMD6vqdQ3fFBGCOUEn67Ih67DkmmBBelEKD1WnTEAG_&usqp=CAU" width="50px;" style="vertical-align: bottom;">
+        <a id="about" href="{%url 'about'%}">ABOUT</a>
+    </div>
+   
+    <form action="{%url 'result'%}">
+    <textarea cols="80" rows="40" name="fulltext"></textarea> 
+    <br> 
+    <input id='submit' type="submit" value="Count!">
+</form>
+</body>
+</html>
